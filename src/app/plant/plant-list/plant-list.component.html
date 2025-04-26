@@ -1,3 +1,20 @@
-<p>
-  plant-list works!
-</p>
+<div class="container-fluid">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Nombre común</th>
+        <th>Tipo</th>
+        <th>Clima</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let planta of plants; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ planta.nombre_comun }}</td>
+        <td>{{ planta.tipo }}</td>
+        <td>{{ planta.clima }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
