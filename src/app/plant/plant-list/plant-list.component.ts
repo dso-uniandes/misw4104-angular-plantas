@@ -8,7 +8,7 @@ import { Plant } from '../plant';
 })
 export class PlantListComponent implements OnInit {
 
-  books: Array<Plant> = [];
+  plants: Array<Plant> = [];
   constructor() { }
 
   ngOnInit() {
